@@ -1,0 +1,852 @@
+[gd_scene load_steps=11 format=3 uid="uid://b08yqjl5kn4es"]
+
+[ext_resource type="Theme" uid="uid://twnstgfyql4f" path="res://Message Settings/message_window_theme.tres" id="1_hdpc8"]
+[ext_resource type="FontFile" uid="uid://bybensx3b36an" path="res://Fonts/Aller_Rg.ttf" id="2_doykj"]
+[ext_resource type="LabelSettings" uid="uid://bncnqiuaj7k34" path="res://Message Settings/Font Settings/alex_name.tres" id="3_bcb2p"]
+[ext_resource type="LabelSettings" uid="uid://bnnmp4od12xmx" path="res://Message Settings/Font Settings/alex_msg.tres" id="4_yrbsc"]
+[ext_resource type="LabelSettings" uid="uid://b6one3vthcpxe" path="res://Message Settings/Font Settings/sam_name.tres" id="5_6b01h"]
+[ext_resource type="LabelSettings" uid="uid://rq4bwdxo5obq" path="res://Message Settings/Font Settings/sam_msg.tres" id="6_s8np4"]
+[ext_resource type="LabelSettings" uid="uid://ivt5wtrkplvw" path="res://Message Settings/Font Settings/mc_name.tres" id="7_ajx0h"]
+[ext_resource type="StyleBox" uid="uid://cpe1ygieih4my" path="res://Message Settings/mc_msg_bubble.tres" id="8_6t051"]
+[ext_resource type="LabelSettings" uid="uid://djjfxvn5wjk0f" path="res://Message Settings/Font Settings/mc_msg.tres" id="9_mhvj7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_beute"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+corner_detail = 6
+shadow_color = Color(0, 0, 0, 0.392157)
+shadow_size = 1
+shadow_offset = Vector2(-1, 0)
+anti_aliasing_size = 0.3
+
+[node name="MessageWindow" type="ScrollContainer"]
+offset_left = 1.0
+offset_top = 31.0
+offset_right = 155.0
+offset_bottom = 2143.0
+theme = ExtResource("1_hdpc8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_right = 4
+
+[node name="MSG_INCOMING" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 10
+
+[node name="msg_alex_1" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_1"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_1"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_1/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_1/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "hey folks, just got the latest build up and running. check out the new combat system!"
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_1" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_1"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_1"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_1/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_1/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "whoa, this looks slick! nice work, alex. the combo system feels smooth."
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_1" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_1"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_1"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_1/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_1/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "agreed, but are we really pushing this out by next month? i'm worried about the time crunch."
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_2" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_2/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_2/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "yeah, i know it's tight. but we gotta impress at the upcoming expo. we can do it!"
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_2" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_2"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_2"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_2/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_2/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "i'm all for it, but the art assets need refining. any progress there?"
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_3" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_3"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_3"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_3/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_3/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "i got it, don't worry!"
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_2" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_2"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_2"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_2/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_2/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "ugh, i'm swamped with bug fixes. can't keep up."
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_3" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_3"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_3"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_3/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_3/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "that's rough :( 
+need a hand with the bugs?"
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_3" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_3"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_3"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_3/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_3/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "yes please!  :)"
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_4" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_4"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_4"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_4/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_4/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "hey, did you all see the new Call of Duty release? what a disappointment."
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_4" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_4"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_4"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_4/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_4/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "seriously! they hyped it up so much, but it's just the same old recycled content."
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_4" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_4"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_4"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_4/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_4/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = " it's frustrating how they play it safe. no innovation, no risks."
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_5" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_5"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_5"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_5/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_5/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "makes me appreciate our project more. we're taking chances, pushing boundaries."
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_5" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_5"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_5"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_5/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_5/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "true, but sometimes i wonder if we're being too ambitious. i mean, will we really finish this on time?"
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_5" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_5"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_5"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_5/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_5/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = " it's a concern, especially with all the unexpected hurdles popping up."
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_6" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_6"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_6"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_6/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_6/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "we got this! we're a dream team. remember why we started this – passion and creativity."
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_6" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_6"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_6"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_6/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_6/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "agreed. but if we want to stand out, we need to keep pushing."
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_6" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_6"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_6"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_6/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_6/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "i hear you. let's brainstorm some fresh ideas for the narrative - i think that's an area we can get the most out of our time"
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_7" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_7"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_7"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_7/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_7/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "definitely. meet up this weekend to hash it out?"
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_sam_7" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_7"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Sam"
+label_settings = ExtResource("5_6b01h")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_7"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_sam_7/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_sam_7/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "sounds good. i'll bring some coffee, we might need it."
+label_settings = ExtResource("6_s8np4")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_mc_7" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_7"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = " You    "
+label_settings = ExtResource("7_ajx0h")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_7"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("8_6t051")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_mc_7/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_mc_7/PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_vertical = 5
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "alright, back to the grind. catch you later, guys."
+label_settings = ExtResource("9_mhvj7")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="msg_alex_8" type="VBoxContainer" parent="MarginContainer/MSG_INCOMING"]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
+
+[node name="Name" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_8"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_doykj")
+theme_override_font_sizes/font_size = 6
+text = "    Alex"
+label_settings = ExtResource("3_bcb2p")
+vertical_alignment = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_8"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_beute")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MSG_INCOMING/msg_alex_8/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+
+[node name="Message" type="Label" parent="MarginContainer/MSG_INCOMING/msg_alex_8/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "take care, everyone. keep the momentum going!"
+label_settings = ExtResource("4_yrbsc")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

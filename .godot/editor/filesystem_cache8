@@ -1,0 +1,71 @@
+bdbec74c6e5bd72edee867077d70896c
+::res://::1700599199
+export_presets.cfg::TextFile::-1::1700188849::0::1::::<><>::
+::res://addons/::1700598606
+::res://addons/godot-git-plugin/::1700598606
+git_plugin.gdextension::GDExtension::-1::1700598606::0::1::::<><>::
+plugin.cfg::TextFile::-1::1700598606::0::1::::<><>::
+THIRDPARTY.md::TextFile::-1::1700598606::0::1::::<><>::
+::res://addons/godot-git-plugin/linux/::1700598606
+::res://addons/godot-git-plugin/macos/::1700598606
+::res://addons/godot-git-plugin/win64/::1700598606
+::res://Audio/::1700161515
+1_Menu_Master.ogg::AudioStreamOggVorbis::2493152936784941147::1700161503::1700161503::1::::<><>::
+2_Day_1_Master.ogg::AudioStreamOggVorbis::4446128162591450935::1700161515::1700161515::1::::<><>::
+::res://Fonts/::1700113453
+Aller_Rg.ttf::FontFile::4073284374277236281::1700103523::1700103670::1::::<><>::
+at01.ttf::FontFile::1119034505237204440::1700100339::1700113453::1::::<><>::
+JetBrainsMono-ExtraBold.ttf::FontFile::5520571593929929846::1700111606::1700113432::1::::<><>::
+JetBrainsMono-Regular.ttf::FontFile::4024067217379579394::1700111602::1700113422::1::::<><>::
+Metropolis-Regular.otf::FontFile::3604744951141108389::1700111609::1700113414::1::::<><>::
+::res://Message Settings/::1700598539
+MaterialClicked.tres::CanvasItemMaterial::5178154012164943174::1700098427::0::1::::<><>::
+mc_msg_bubble.tres::StyleBoxFlat::5835553361529850204::1700598539::0::1::::<><>::
+message_window_theme.tres::Theme::1379826812380553515::1700121327::0::1::::<><>::
+::res://Message Settings/Font Settings/::1700598539
+alex_msg.tres::LabelSettings::3326469497588625379::1700120879::0::1::::<><>::uid://bybensx3b36an
+alex_name.tres::LabelSettings::3303822751200270733::1700598539::0::1::::<><>::uid://bybensx3b36an::::res://Fonts/Aller_Rg.ttf
+mc_msg.tres::LabelSettings::7809886826297416231::1700598539::0::1::::<><>::uid://bybensx3b36an::::res://Fonts/Aller_Rg.ttf
+mc_name.tres::LabelSettings::606071064270579716::1700598539::0::1::::<><>::uid://bybensx3b36an::::res://Fonts/Aller_Rg.ttf
+sam_msg.tres::LabelSettings::1228004125708674522::1700120896::0::1::::<><>::uid://bybensx3b36an
+sam_name.tres::LabelSettings::4591974093077946350::1700598539::0::1::::<><>::uid://bybensx3b36an::::res://Fonts/Aller_Rg.ttf
+::res://Scenes/::1700598539
+game.tscn::PackedScene::4488297102462678795::1700598539::0::1::::<><>::res://Scripts/game.gd<>uid://b54bnapith86m::::res://Sprites/Backgrounds/background1.png<>uid://tgtkf6h1mqot::::res://Sprites/Phone Icons/Messages_Black.png<>uid://c85jv3k4pdwk8::::res://Sprites/Backgrounds/nebula x 3.png<>uid://dqhb2a67wwfs5::::res://Sprites/Backgrounds/background2.png<>res://Scripts/home_button.gd<>uid://njty358hkrv3::::res://Sprites/Backgrounds/background3.png<>uid://cv17bsh3y4bkb::::res://Sprites/Phone Icons/Settings_Black.png<>uid://bxlj2f2wpqtnm::::res://Fonts/JetBrainsMono-Regular.ttf<>res://Scripts/clock.gd<>uid://c1r1uaj4v6sxm::::res://Sprites/Phone Icons/arrow_icon.png<>uid://bs3supo3hoxkc::::res://Sprites/Phone Icons/circle.png<>uid://dob88ikk0ml2n::::res://Sprites/Phone Icons/default_icon.png<>res://Scenes/settings_app.gd<>uid://cibsxxsrx3g1d::::res://Sprites/JetBrainsMono-ExtraBold.ttf<>uid://bkybbl05022hv::::res://Sprites/Phone Icons/status_bar_battery_nine_tenth.png<>res://Scripts/message_app.gd<>uid://c8su2xqo5v720::::res://Sprites/Phone Icons/wifi_icon.png<>uid://ckwhai1gakb0q::::res://Fonts/JetBrainsMono-ExtraBold.ttf<>uid://bybensx3b36an::::res://Fonts/Aller_Rg.ttf<>uid://cvyeyi00xgidk::::res://Sprites/Backgrounds/background.png<>uid://bf5kvjlvln7a0::::res://Sprites/Phone Icons/cellular_data_icon.png<>res://Scripts/BackButton.gd<>uid://b08yqjl5kn4es::::res://Scenes/message_window.tscn<>res://Scenes/settings_close.gd<>uid://brmfvf3bae7kr::::res://Fonts/Metropolis-Regular.otf<>uid://b73plmtq0a02g::::res://Sprites/Phone Icons/UI ICONS_WHITE_pixel art_Sprite Sheet.png<>uid://clfcqb66l4reh::::res://Sprites/Phone Icons/volume_icon_2.png<>uid://c27dyv46nlawi::::res://Sprites/Phone Icons/volume_icon_0.png<>uid://b4l0c06p4uroh::::res://Audio/2_Day_1_Master.ogg
+message.tscn::PackedScene::2499854505425040900::1700120134::0::1::::<><>::uid://bybensx3b36an
+message_window.tscn::PackedScene::4210752512136727318::1700161559::0::1::::<><>::uid://twnstgfyql4f
+settings_app.gd::GDScript::-1::1700167547::0::1::::<>TextureRect<>::
+settings_close.gd::GDScript::-1::1700167463::0::1::::<>Control<>::
+::res://Scripts/::1700598624
+BackButton.gd::GDScript::-1::1700118591::0::1::::<>Control<>::
+clock.gd::GDScript::-1::1700117924::0::1::::<>Label<>::
+game.gd::GDScript::-1::1700598624::0::1::::<>Node2D<>::
+home_button.gd::GDScript::-1::1700120247::0::1::::<>Area2D<>::
+message_app.gd::GDScript::-1::1700118476::0::1::::<>TextureRect<>::
+::res://Sprites/::1700182507
+1A.png::CompressedTexture2D::6876258404755507354::1700090043::1700090043::1::::<><>::
+cover.png::CompressedTexture2D::4642024416734220079::1700182507::1700182507::1::::<><>::
+icon.png::CompressedTexture2D::227157595593384158::1700182249::1700182253::1::::<><>::
+JetBrainsMono-ExtraBold.ttf::FontFile::5337551710021908991::1700104232::1700105567::1::::<><>::
+::res://Sprites/Backgrounds/::1700120194
+background1.png::CompressedTexture2D::4552036903576590550::1700089706::1700120194::1::::<><>::
+background2.png::CompressedTexture2D::8296843176367579366::1700089709::1700120194::1::::<><>::
+background3.png::CompressedTexture2D::932232367504312586::1700089712::1700120194::1::::<><>::
+background.png::CompressedTexture2D::6296638336880878224::1700108262::1700120194::1::::<><>::
+nebula x 3.png::CompressedTexture2D::7151589982109629301::1700097759::1700120194::1::::<><>::
+::res://Sprites/Phone Icons/::1700182253
+arrow_icon.png::CompressedTexture2D::6634460096734256394::1700100208::1700120172::1::::<><>::
+cellular_data_icon.png::CompressedTexture2D::2799941396777115153::1700110935::1700120172::1::::<><>::
+Circle Base_Black.png::CompressedTexture2D::7633048029215139564::1700091695::1700120172::1::::<><>::
+circle.png::CompressedTexture2D::3708751878798889362::1700116461::1700120172::1::::<><>::
+default_icon.png::CompressedTexture2D::8146033267849064447::1700107780::1700120172::1::::<><>::
+Emojis.png::CompressedTexture2D::6357710859500529640::1700159855::1700160084::1::::<><>::
+Messages_Black.png::CompressedTexture2D::1347146087307556687::1700085323::1700120172::1::::<><>::
+message_icon.png::CompressedTexture2D::7942661598151537071::1700115371::1700120172::1::::<><>::
+Music_Black.png::CompressedTexture2D::4555782952888084070::1700090545::1700120172::1::::<><>::
+Phone_Black.png::CompressedTexture2D::6003266698842746901::1700090572::1700120172::1::::<><>::
+Settings_Black.png::CompressedTexture2D::6302426592492206849::1700090562::1700120172::1::::<><>::
+status_bar_battery_nine_tenth.png::CompressedTexture2D::3137917306732056663::1700099720::1700120172::1::::<><>::
+UI ICONS_WHITE_pixel art_Sprite Sheet.png::CompressedTexture2D::4691197316240152528::1700167026::1700167026::1::::<><>::
+volume_icon_0.png::CompressedTexture2D::6734226392990990908::1700161718::1700166150::1::::<><>::
+volume_icon_2.png::CompressedTexture2D::5555390644699512971::1700161716::1700166150::1::::<><>::
+wifi_icon.png::CompressedTexture2D::7127495796736081527::1700100058::1700120172::1::::<><>::

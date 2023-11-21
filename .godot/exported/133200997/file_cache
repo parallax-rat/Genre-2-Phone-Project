@@ -1,0 +1,12 @@
+res://Message Settings/Font Settings/alex_msg.tres::dd28408961f5ea487b162250e669f175::1700120879::res://.godot/exported/133200997/export-20d34024766ef3f4b6b0c6efb3d5eca2-alex_msg.res
+res://Message Settings/Font Settings/alex_name.tres::8aa0fd587f8587819f7cfe9a0551c9a5::1700186632::res://.godot/exported/133200997/export-61fd22fc51850e1c5d24b0fae5525192-alex_name.res
+res://Message Settings/Font Settings/mc_msg.tres::564d2d3355147b506effe2ae71ef3192::1700186632::res://.godot/exported/133200997/export-f865b3f83e644ee22fa2fd35803ce4b0-mc_msg.res
+res://Message Settings/Font Settings/mc_name.tres::4071e3fdca56c8df652247186bce1775::1700186632::res://.godot/exported/133200997/export-9a33932765a1a4a21d778c9e908639c2-mc_name.res
+res://Message Settings/Font Settings/sam_msg.tres::41188050e567ef1670889c19894a6013::1700120896::res://.godot/exported/133200997/export-64a822e2f91b0ef004551c13f125fb8a-sam_msg.res
+res://Message Settings/Font Settings/sam_name.tres::f185ab94569b28384ebb39df99800bf5::1700186632::res://.godot/exported/133200997/export-7f7bc5fcf97944de811679c8ea6f4d8a-sam_name.res
+res://Message Settings/MaterialClicked.tres::35c53c115e26cb09b8997d3b202067a1::1700098427::res://.godot/exported/133200997/export-3fe2bfa77c711f6810f11cfe3ef53868-MaterialClicked.res
+res://Message Settings/mc_msg_bubble.tres::9603f794488a365ac8a41076af7a4f9f::1700186632::res://.godot/exported/133200997/export-a36e75ddfd6c31ccf8f97fee654dfaaf-mc_msg_bubble.res
+res://Message Settings/message_window_theme.tres::50af2a1cbb9211724dc32c7c7b3f0d24::1700121327::res://.godot/exported/133200997/export-fc0ac3ba1b602123e26c481603b411b8-message_window_theme.res
+res://Scenes/game.tscn::d8617536585913c066adbc6bac10594b::1700188789::res://.godot/exported/133200997/export-d45e16ca8d170891778b9dcfa9c69e68-game.scn
+res://Scenes/message.tscn::66afe303643eb3958952b28a69e0bfb6::1700120134::res://.godot/exported/133200997/export-8ac75d5d49fcb20b2de43715bd4a324f-message.scn
+res://Scenes/message_window.tscn::bf6429da32cffdbe651cf4d71f530a4c::1700161559::res://.godot/exported/133200997/export-0c6f7464b0221ad9866ffbf2081ed168-message_window.scn

@@ -1,0 +1,11 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://ivt5wtrkplvw"]
+
+[ext_resource type="FontFile" uid="uid://bybensx3b36an" path="res://Fonts/Aller_Rg.ttf" id="1_ici6l"]
+
+[resource]
+line_spacing = 0.0
+font = ExtResource("1_ici6l")
+font_size = 7
+outline_size = 4
+outline_color = Color(0, 0.207843, 0.423529, 0.886275)
+shadow_offset = Vector2(-4, -0.5)

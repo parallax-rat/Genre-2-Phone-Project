@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bncnqiuaj7k34"]
+
+[ext_resource type="FontFile" uid="uid://bybensx3b36an" path="res://Fonts/Aller_Rg.ttf" id="1_ab030"]
+
+[resource]
+line_spacing = 0.0
+font = ExtResource("1_ab030")
+font_size = 7
+outline_size = 4
+outline_color = Color(0, 0.247059, 0, 1)
